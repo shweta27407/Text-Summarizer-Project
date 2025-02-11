@@ -12,7 +12,22 @@ In this project, we implemented the **PEGASUS** model to extract semantic featur
 ## Project Overview
 This repository contains code, it's output and analysis for Natural Language Processing (NLP).  
 🔹 **Main Implementation:** [NLP.ipynb](NLP.ipynb)  
-🔹 Includes data preprocessing, model training, and evaluation.  
+🔹 Includes data preprocessing, model training, and evaluation.
+
+### Hugging Face Components Used in This Project
+
+| **Component**       | **Hugging Face Feature Used**                          |
+|---------------------|--------------------------------------------------------|
+| **Model Used**      | `google/pegasus-cnn_dailymail`                         |
+| **Model Loading**   | `AutoModelForSeq2SeqLM.from_pretrained()`              |
+| **Tokenizer**       | `AutoTokenizer.from_pretrained()`                      |
+| **Dataset Used**    | `samsum` dataset                                       |
+| **Dataset Handling** | `load_dataset("samsum")`, `load_from_disk()`          |
+| **Preprocessing**   | Tokenization using `tokenizer()`                       |
+| **Training**        | `Trainer` API with `TrainingArguments`                 |
+| **Trainer API**     | `Trainer(model, args, train_dataset, eval_dataset)`    |
+| **Evaluation**      | `load_metric('rouge')` for ROUGE scores                |
+| **Text Generation** | `pipeline("summarization")`                            |  
 
 ## Practical Applications
 The ability of **PEGASUS** to generate **high-quality summaries** makes it a valuable tool for applications in areas such as:
