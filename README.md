@@ -9,7 +9,12 @@ In this project, we implemented the **PEGASUS** model to extract semantic featur
 - **Flexibility and Adaptability:** This makes **PEGASUS** highly flexible and adaptable to various domains and languages, while also being efficient due to its lower training data requirements.
 - **Consistency Across Text Lengths:** Our results showed that the model maintains consistent performance across texts of varying lengths, highlighting its potential utility in real-world applications where document lengths can vary significantly.
 
-### Practical Applications
+## Project Overview
+This repository contains code, it's output and analysis for Natural Language Processing (NLP).  
+🔹 **Main Implementation:** [NLP.ipynb](NLP.ipynb)  
+🔹 Includes data preprocessing, model training, and evaluation.  
+
+## Practical Applications
 The ability of **PEGASUS** to generate **high-quality summaries** makes it a valuable tool for applications in areas such as:
 
 - **News Aggregation**
